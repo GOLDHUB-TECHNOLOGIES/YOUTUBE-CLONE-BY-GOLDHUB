@@ -1,0 +1,198 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: roboto, Arial, Helvetica, sans-serif;
+}
+.nav-logo {
+  width: 90px;
+  margin: 5px;
+}
+
+nav {
+  /* background-color: rgb(215, 5, 5); */
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  /* gap: 100px; */
+  padding: 20px 10px;
+  align-items: center;
+  border-bottom: 1px solid rgb(96, 94, 94);
+}
+
+.search {
+  border-radius: 20px;
+  width: 100%;
+  height: 30px;
+  border: 1px solid black;
+  padding-left: 12px;
+  outline: none;
+}
+
+.middle-box {
+  /* flex: 3; */
+  width: 40%;
+}
+
+.left-box {
+  /* flex: 1; */
+}
+
+.right-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.create-btn {
+  padding: 7px 17px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.create-btn:hover {
+  background-color: brown;
+}
+
+/* BODY SECTION */
+.main-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin-top: 10px;
+  margin-left: 5px;
+  padding: 0px 5px;
+  gap: 10px;
+}
+
+.image-container {
+  /* width: 300px; */
+  height: 180px;
+  position: relative;
+}
+
+.video-image {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.video-image:hover {
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.video-details-pp {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.video-details {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.video-details h2,
+p {
+  margin: 0;
+}
+
+.video {
+  /* width: 300px; */
+  /* height: 180px; */
+}
+
+.title {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.chastat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.channel {
+  font-size: 12px;
+}
+
+.stat {
+  font-size: 10px;
+}
+
+.video-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.duration {
+  background-color: black;
+  width: fit-content;
+  color: white;
+  font-size: 10px;
+  padding: 1px 4px;
+  border-radius: 2px;
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+}
+
+@media (max-width: 600px){
+  .create-btn {
+    display: none;
+  }
+
+  .main-section{
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* youtube shorts */
+
+.youshort-logo {
+  width: 90px;
+  margin: 40px 10px 15px 20px;
+}
+
+
+.video-section {
+  gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.short-video {
+  display: flex;
+  position: relative;
+  height: 350px;
+  background-color: white;
+  overflow: scroll;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.short-video::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 600px){
+  
+  .video-section {
+    grid-template-columns: 1fr;
+  }
+}
